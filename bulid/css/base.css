@@ -64,12 +64,12 @@ strong {
 a {
 	text-decoration: none;
 	color: #333;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Microsoft YaHei', PingHei, '宋体', Tahoma, Arial, sans-serif;
 }
 
 a:hover {
-	color: #cb7407;
+	color: #008FB5;
 	text-decoration: none;
 }
 
@@ -88,6 +88,8 @@ img {
 	max-width: 100%;
 }
 
-
+body{
+	background-color: #EBEBEB;
+}
 
 

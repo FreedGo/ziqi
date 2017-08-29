@@ -14,21 +14,116 @@
 	<title>Title</title>
 </head>
 <body>
-<div class="container">
-	<div class="head-tips" id="headTips">
+<!--顶部轮播信息-->
+<div class="head-tips" id="headTips">
+	<div class="focus">
+		<div id="pic">
+			<ul>
+				<li><a href="http://www.SuperSlide2.com" target="_blank">hello World 1</a> </li>
+				<li><a href="http://www.SuperSlide2.com" target="_blank">hello World 2</a> </li>
+				<li><a href="http://www.SuperSlide2.com" target="_blank">hello World 3</a> </li>
+				<li><a href="http://www.SuperSlide2.com" target="_blank">hello World 4</a> </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--顶部轮播信息 end -->
+<!--头部导航栏-->
+<div class="header">
+	<div class="search">
+		<div class="search-content clearfix">
+			<div class="login"></div>
+		</div>
+	</div>
+	<div class="head-content clearfix">
+		<div class="logo pull-left">
+			<a href="/"><img src="bulid/images/logo.png" alt=""></a>
+		</div>
+		<div class="main-nav pull-left">
+			<ul class="nav-list clearfix">
+				<li class="list-item pull-left"><a href="">首页</a></li>
+				<li class="list-item pull-left"><a href="">关于我们</a></li>
+				<li class="list-item pull-left"><a href="">企业文化</a></li>
+				<li class="list-item pull-left"><a href="">产品中心</a></li>
+				<li class="list-item pull-left"><a href="">服务与培训</a></li>
+				<li class="list-item pull-left"><a href="">新闻中心</a></li>
+				<li class="list-item pull-left"><a href="">客户案例</a></li>
+				<li class="list-item pull-left"><a href="">工作计划</a></li>
+				<li class="list-item pull-left"><a href="">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--头部导航栏end-->
+
+<div class="z-contain">
+	<!--banner-->
+	<div class="banner">
 		<div class="fullSlide">
+
 			<div class="bd">
 				<ul>
-					<li ><a target="_blank" href="http://www.superslide2.com">hello world 1</a></li>
-					<li ><a target="_blank" href="http://www.superslide2.com">hello world 2</a></li>
-					<li ><a target="_blank" href="http://www.superslide2.com">hello world 3</a></li>
+					<li style="background:url(bulid/images/1.jpg) #194982 center 0 no-repeat;"><a target="_blank" href=""></a></li>
+					<li style="background:url(bulid/images/2.jpg) #15181e center 0 no-repeat;"><a target="_blank" href=""></a></li>
+					<li style="background:url(bulid/images/3.jpg) #0b0b0b center 0 no-repeat;"><a target="_blank" href=""></a></li>
+					<li style="background:url(bulid/images/4.jpg) #000000 center 0 no-repeat;"><a target="_blank" href=""></a></li>
+					<li style="background:url(bulid/images/5.jpg) #04304b center 0 no-repeat;"><a target="_blank" href=""></a></li>
+				</ul>
+			</div>
+			<div class="hd"><ul></ul></div>
+		</div>
+		<script type="text/javascript">
+            jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
+		</script>
+	</div>
+	<!--banner-end-->
+	<!--品牌介绍-->
+	<div class="main-info clearfix">
+		<div class="info-titlepic pull-left">
+			<img src="bulid/images/info-titlepic.png" alt="">
+		</div>
+		<div class="info-content pull-left">
+			<h2 class="info-content-title">标题标题</h2>
+			<p class="info-content-con">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+		</div>
+	</div>
+	<!--品牌介绍-->
+	<!--产品列表-->
+	<div class="product">
+		<!--左侧-->
+		<div class="product-left pull-left">
+			<div class="product-left-list">
+				<h3 class="left-list-title"><span>产品列表</span></h3>
+				<ul class="list-group left-lists">
+					<li class="list-group-item"><a href="">Cras justo odio </a></li>
+					<li class="list-group-item"><a href="">Dapibus ac facilisis in </a></li>
+					<li class="list-group-item"><a href="">Morbi leo risus </a></li>
+					<li class="list-group-item"><a href="">Porta ac consectetur ac </a></li>
+					<li class="list-group-item"><a href="">Vestibulum at eros </a></li>
+					<li class="list-group-item"><a href="">Vestibulum at eros </a></li>
+					<li class="list-group-item"><a href="">Vestibulum at eros </a></li>
+					<li class="list-group-item"><a href="">Vestibulum at eros </a></li>
+				</ul>
+			</div>
+			<div class="left-ad">
+				我是广告
+			</div>
+		</div>
+		<!--右侧-->
+		<div class="product-right pull-left">
+			<div class="product-right-list">
+				<ul class="right-lists">
+					<li class="right-list-item cell-item-product">1</li>
+					<li class="right-list-item cell-item-product">2</li>
+					<li class="right-list-item cell-item-product">3</li>
+					<li class="right-list-item cell-item-product">4</li>
+					<li class="right-list-item cell-item-product">5</li>
+					<li class="right-list-item cell-item-product">6</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="header">
-		hello world
-	</div>
+	<!--产品列表-->
 </div>
 </body>
 </html>

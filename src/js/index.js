@@ -5,13 +5,15 @@
  */
 $(function () {
 	//1.顶部信息轮播
-	$(".fullSlide").slide({
-		titCell:".hd ul",
-		mainCell:".bd ul",
-		effect:"leftMarquee",
-		autoPlay:true,
-		trigger:"click",
-		interTime:1000,
-		delayTime:3000
-	});
+    $(".focus").slide({
+        titCell:"#tip li",
+        mainCell:"#pic ul",
+        effect:"leftMarquee",
+        autoPlay:true,
+        interTime:30,
+        delayTime:8000
+    });
+    //2.中间轮播图
+    // $(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
+
 })
