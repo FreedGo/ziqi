@@ -1,7 +1,19 @@
 @import "visible";
 
-h1{
-  color: @mainColor;
-  font-size: 16px;
-  font-weight: bold
+//头部信息轮播
+
+/* 本例子css */
+.fullSlide{
+  width:100%;  position:relative;  height:36px;
+  .bd{ margin:0 auto; position:relative; z-index:0; overflow:hidden;  }
+  .bd ul{  }
+  .bd li{   height:36px; overflow:hidden; text-align:left;  }
+  .bd li a{ display:block; height:36px;
+    line-height:36px; }
+  .hd{ width:100%;  position:absolute; z-index:1; bottom:0; left:0; height:30px; line-height:30px; }
+  .hd ul{ text-align:center; }
+  .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:42px; height:11px; margin:1px; overflow:hidden; background:#000;
+    filter:alpha(opacity=50);opacity:0.5;  line-height:999px;
+  }
+  .hd ul .on{ background:#f00;  }
 }
