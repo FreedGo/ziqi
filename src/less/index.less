@@ -1,19 +1,20 @@
 @import "visible";
 
-.z-contain{
-  width:1200px;
+.z-contain {
+  width: 1200px;
   margin: 0 auto;
 }
+
 //顶部信息轮播
 
-.head-tips{
-  width:100%;
+.head-tips {
+  width: 100%;
   background-color: #1DB0B8;
   .focus {
     width: 1200px;
     height: 36px;
     position: relative;
-    margin:0 auto;
+    margin: 0 auto;
     #pic {
       width: 1200px;
       height: 36px;
@@ -26,7 +27,7 @@
           height: 36px;
           float: left;
           line-height: 36px;
-          a{
+          a {
             display: inline-block;
             padding: 0 10px;
             font-size: 14px;
@@ -41,77 +42,105 @@
   }
 
 }
+
 //顶部信息轮播end
 
 //头部nav菜单
-.header{
-  width:100%;
+.header {
+  width: 100%;
   background-color: #fff;
-  .head-content{
-    width:1200px;
-    margin:0 auto;
+  .head-content {
+    width: 1200px;
+    margin: 0 auto;
     padding: 20px 0;
-    border-bottom:#ccc solid 1px;
-    .logo{
-      width:300px;
+    border-bottom: #ccc solid 1px;
+    .logo {
+      width: 300px;
     }
-    .main-nav{
-      width:900px;
-      .nav-list{
+    .main-nav {
+      width: 900px;
+      .nav-list {
 
-        .list-item{
-          width:100px;
-          a{
-            line-height:70px;
+        .list-item {
+          width: 100px;
+          a {
+            line-height: 70px;
             text-align: center;
             display: inline-block;
-            width:100%;
+            width: 100%;
             color: @mainColor;
             transition: all 0.5s ease 0s;
           }
-          a:hover{
+          a:hover {
             color: #fff;
             background-color: @mainColor;
-            box-shadow: 0 5px 30px 2px rgba(0,143,180,0.2);
+            box-shadow: 0 5px 30px 2px rgba(0, 143, 180, 0.2);
           }
         }
       }
     }
   }
 }
+
 //头部nav菜单
 //轮播图
-.fullSlide{
-  width:100%;
-  position:relative;
-  height:400px;
-  background:#000;
-  margin-bottom: 15px;
- .bd{
-   margin:0 auto;
-   position:relative;
-   z-index:0;
-   overflow:hidden;
-   ul{ width:100% !important;  }
-   li{ width:100% !important;  height:400px; overflow:hidden; text-align:center;  }
-   li a{ display:block; height:400px; }
- }
+.fullSlide {
+  width: 100%;
+  position: relative;
+  height: 400px;
+  background: #000;
+  margin-bottom: 20px;;
+  .bd {
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    ul {
+      width: 100% !important;
+    }
+    li {
+      width: 100% !important;
+      height: 400px;
+      overflow: hidden;
+      text-align: center;
+    }
+    li a {
+      display: block;
+      height: 400px;
+    }
+  }
 
- .hd{
-   width:100%;
-   position:absolute;
-   z-index:1; bottom:0;
-   left:0; height:30px;
-   line-height:30px;
-   background:url(../images/touming.png) repeat-x;
-   text-align:center;
-    _background:#000;
-   _filter:alpha(opacity=60);
-   ul{ text-align:center;  padding-top:5px;  }
-   ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:8px; height:8px; margin:5px; background:url(../images/tg_flash_p.png) -18px 0; overflow:hidden;
-     line-height:9999px;
-   }
-   ul .on{ background-position:0 0; }
+  .hd {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    background: url(../images/touming.png) repeat-x;
+    text-align: center;
+    _background: #000;
+    _filter: alpha(opacity=60);
+    ul {
+      text-align: center;
+      padding-top: 5px;
+    }
+    ul li {
+      cursor: pointer;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      width: 8px;
+      height: 8px;
+      margin: 5px;
+      background: url(../images/tg_flash_p.png) -18px 0;
+      overflow: hidden;
+      line-height: 9999px;
+    }
+    ul .on {
+      background-position: 0 0;
+    }
   }
 
 }
@@ -119,32 +148,32 @@
 //轮播图
 
 //主页中间介绍
-.main-info{
-  margin-bottom: 15px;
+.main-info {
+  margin-bottom: 20px;;
   background-color: #fff;
-  .info-titlepic{
-    img{
-      width:400px;
-      height:240px;
+  .info-titlepic {
+    img {
+      width: 400px;
+      height: 240px;
     }
 
   }
-  .info-content{
-    margin-left: 15px;
-    width:785px;
+  .info-content {
+    margin-left: 20px;;
+    width: 780px;
     height: 240px;
     overflow: hidden;
     padding: 10px 0;
     color: @mainColor;
-    .info-content-title{
+    .info-content-title {
       font-size: 18px;
-      line-height:32px;
+      line-height: 32px;
       //font-weight: bold;
     }
-    .info-content-con{
-      width:770px;
+    .info-content-con {
+      width: 760px;
       font-size: 14px;
-      line-height:24px;
+      line-height: 24px;
     }
   }
 }
@@ -152,31 +181,124 @@
 //主页中间介绍
 
 //产品列表
-.product{
-  .product-left{
-    width:260px;
-    background-color: #fff;
-    padding: 20px 20px 0;
-    .left-lists .list-group-item{
-      border: none;
-      padding-left: 0;
-    }
-    .left-list-title{
-      font-size: 16px;
-      border-bottom: #EBEBEB solid 1px;
-      margin-bottom: 10px;
-      >span{
-        border-bottom: @mainColor solid 1px;
-        line-height:32px;
-        display: inline-block;
-        position: relative;
-        bottom: -1px;
-        padding-right: 10px;
+.product {
+  .product-left {
+    width: 300px;
+    margin-right: 20px;
+    .product-left-list{
+      padding: 20px 20px 0;
+      background-color: #fff;
+      height: 460px;
+      margin-bottom: 20px;
+      .left-lists .list-group-item {
+        border: none;
+        padding-left: 0;
+      }
+      .left-list-title {
+        font-size: 16px;
+        border-bottom: #EBEBEB solid 1px;
+        margin-bottom: 10px;
+        > span {
+          border-bottom: @mainColor solid 1px;
+          line-height: 32px;
+          display: inline-block;
+          position: relative;
+          bottom: -1px;
+          padding-right: 10px;
 
+        }
+      }
+    }
+    .left-ad{
+      width:300px;
+      height: 220px;
+      img{
+        width:300px;
+        height: 220px;
       }
     }
   }
+  .product-right {
+    width: 880px;
+    overflow: hidden;
+    .right-lists {
+      width:1000px;
+      .right-list-item{
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
+
+.cell-item-product {
+  width: 280px;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  :hover .cell-info{
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .cell-titlepic{
+    img{
+      width: 280px;
+      height: 340px;
+    }
+  }
+  .cell-info{
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    transition: all 0.5s ease 0s;
+    bottom: -58px;
+    padding:10px 20px;
+    width:280px;
+    .cell-title{
+      font-size: 16px;
+      text-align: center;
+      line-height:36px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .cell-dec{
+      font-size: 14px;
+      line-height:24px;
+      color: #fff;
+      text-align: center;
+      height: 48px;
+      overflow: hidden;
+    }
+  }
+
+}
+
+//产品列表
+
+//产品轮播
+/* 本例子css */
+.ladyScroll{
+  width:1200px;
+  height:484px;
+  margin:15px auto;
+  border:#ddd 1px solid;
+  position:relative;
+  .prev,.ladyScroll .next{width:51px;height:45px;position:absolute;top:210px;left:0;z-index:100; cursor:pointer; background:url(images/btns.png) no-repeat;}
+  .next{ left:auto; right:0; background-position:0 -90px;}
+  .prev:hover{ background-position:0 -45px; }
+  .next:hover{ background-position:0 -135px; }
+
+  .scrollWrap{width:1200px;margin-left:31px;padding-top:15px;overflow:hidden;position:absolute;}
+  dl{float:left;width:308px;text-align:center;position:relative;}
+  span{display:block;width:298px;height:53px;position:absolute;left:5px;bottom:0;background:#5f626b;filter:alpha(opacity=80);opacity:0.80;}
+  dt{margin:0 auto;width:298px;overflow:hidden;}
+  img{display:block;width:298px;height:450px;}
+  dd{width:298px;height:40px;line-height:28px;font-size:20px;color:#fff;text-align:center;overflow:hidden;position:absolute;left:5px;bottom:0;}
+  dd a{ color:#fff;  }
+  dd a:hover{ text-decoration:none;  }
+  .ladyScroll dl:hover span{ background:#B52153;  }
 }
 
 
-//产品列表
+
+//产品轮播
