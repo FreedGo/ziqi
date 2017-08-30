@@ -185,7 +185,7 @@
   .product-left {
     width: 300px;
     margin-right: 20px;
-    .product-left-list{
+    .product-left-list {
       padding: 20px 20px 0;
       background-color: #fff;
       height: 460px;
@@ -209,11 +209,11 @@
         }
       }
     }
-    .left-ad{
-      width:300px;
+    .left-ad {
+      width: 300px;
       height: 220px;
-      img{
-        width:300px;
+      img {
+        width: 300px;
         height: 220px;
       }
     }
@@ -222,8 +222,8 @@
     width: 880px;
     overflow: hidden;
     .right-lists {
-      width:1000px;
-      .right-list-item{
+      width: 1000px;
+      .right-list-item {
         margin-right: 20px;
         margin-bottom: 20px;
       }
@@ -237,33 +237,33 @@
   height: 340px;
   position: relative;
   overflow: hidden;
-  :hover .cell-info{
+  :hover .cell-info {
     bottom: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
   }
-  .cell-titlepic{
-    img{
+  .cell-titlepic {
+    img {
       width: 280px;
       height: 340px;
     }
   }
-  .cell-info{
+  .cell-info {
     position: absolute;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.5s ease 0s;
     bottom: -58px;
-    padding:10px 20px;
-    width:280px;
-    .cell-title{
+    padding: 10px 20px;
+    width: 280px;
+    .cell-title {
       font-size: 16px;
       text-align: center;
-      line-height:36px;
+      line-height: 36px;
       color: #fff;
       margin-bottom: 10px;
     }
-    .cell-dec{
+    .cell-dec {
       font-size: 14px;
-      line-height:24px;
+      line-height: 24px;
       color: #fff;
       text-align: center;
       height: 48px;
@@ -277,28 +277,401 @@
 
 //产品轮播
 /* 本例子css */
-.ladyScroll{
-  width:1200px;
-  height:484px;
-  margin:15px auto;
-  border:#ddd 1px solid;
-  position:relative;
-  .prev,.ladyScroll .next{width:51px;height:45px;position:absolute;top:210px;left:0;z-index:100; cursor:pointer; background:url(images/btns.png) no-repeat;}
-  .next{ left:auto; right:0; background-position:0 -90px;}
-  .prev:hover{ background-position:0 -45px; }
-  .next:hover{ background-position:0 -135px; }
-
-  .scrollWrap{width:1200px;margin-left:31px;padding-top:15px;overflow:hidden;position:absolute;}
-  dl{float:left;width:308px;text-align:center;position:relative;}
-  span{display:block;width:298px;height:53px;position:absolute;left:5px;bottom:0;background:#5f626b;filter:alpha(opacity=80);opacity:0.80;}
-  dt{margin:0 auto;width:298px;overflow:hidden;}
-  img{display:block;width:298px;height:450px;}
-  dd{width:298px;height:40px;line-height:28px;font-size:20px;color:#fff;text-align:center;overflow:hidden;position:absolute;left:5px;bottom:0;}
-  dd a{ color:#fff;  }
-  dd a:hover{ text-decoration:none;  }
-  .ladyScroll dl:hover span{ background:#B52153;  }
+.product-slide {
+  height: 250px;
+  margin-bottom: 20px;
 }
 
+.ladyScroll {
+  width: 1200px;
+  height: 250px;
+  margin: 15px auto;
+  border: #ddd 1px solid;
+  position: relative;
+  .prev, .next {
+    width: 51px;
+    height: 45px;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    z-index: 100;
+    cursor: pointer;
+    background: url(../images/btns.png) no-repeat;
+  }
+  .next {
+    left: auto;
+    right: 0;
+    background-position: 0 -90px;
+  }
+  .prev:hover {
+    background-position: 0 -45px;
+  }
+  .next:hover {
+    background-position: 0 -135px;
+  }
 
+  .scrollWrap {
+    width: 1200px;
+    margin-left: 30px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: absolute;
+  }
+  dl {
+    float: left;
+    width: 210px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+  }
+  span {
+    display: block;
+    width: 298px;
+    height: 53px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    background: #5f626b;
+    filter: alpha(opacity=80);
+    opacity: 0.80;
+  }
+  dt {
+    margin: 0 auto;
+    width: 210px;
+    overflow: hidden;
+  }
+  img {
+    display: block;
+    width: 210px;
+    height: 210px;
+  }
+  dd {
+    width: 298px;
+    height: 40px;
+    line-height: 28px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+  }
+  dd a {
+    color: #fff;
+  }
+  dd a:hover {
+    text-decoration: none;
+  }
+  .ladyScroll dl:hover span {
+    background: #B52153;
+  }
+
+  .dlList {
+    dl {
+      dt {
+        width: 210px;
+        height: 210px;
+      }
+
+    }
+  }
+}
 
 //产品轮播
+
+//友链
+.friendly-link {
+  width: 1200px;
+  /*margin-top: 10px;*/
+  padding: 15px 0;
+  margin: 0 auto;
+
+}
+
+.friendly-link-head h2 {
+  font-size: 16px;
+  line-height: 34px;
+  color: @mainColor;
+  border-top: 2px solid @mainColor;
+  text-indent: 15px;
+}
+
+.friendly-link-content {
+  padding: 0 15px;
+}
+
+.friendly-link-content a {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #333;
+  line-height: 22px;
+}
+
+.friendly-link-content a:hover {
+  color: @mainColor;
+}
+
+//友链
+
+//新闻
+.tabRank {
+  width: 280px;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid #d8d8d8;
+  .hd {
+    background-color: #e2e2e2;
+    height: 29px;
+    line-height: 28px;
+    border-bottom: none;
+    h3 {
+      float: left;
+      width: 124px;
+      overflow: hidden;
+      text-align: center;
+      a {
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+  .hd h3.on {
+    background-color: #f9f9f9;
+    height: 29px;
+  }
+  .hd h3.on a {
+    display: block;
+    color: #e72410;
+  }
+
+  .bd {
+    height: 424px;
+    background-color: #f9f9f9;
+    clear: both;
+  }
+  .bd ul {
+    padding: 10px 8px;
+  }
+  .bd .ulList li {
+    border-bottom: 1px solid #e5e5e5;
+    height: 42px;
+    line-height: 42px;
+    width: 232px !important;
+  }
+  .bd .ulList li a {
+    color: #333;
+  }
+  .bd .ulList li .num {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background: url(images/icons.png) no-repeat -50px 0;
+    width: 24px;
+    height: 20px;
+    display: block;
+    float: left;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 13px;
+    padding-right: 6px;
+  }
+  .bd .ulList li.t .num {
+    background-position: 0 0;
+    color: #fff;
+  }
+  .bd .ulList li.t {
+    line-height: 42px !important;
+  }
+  .bd .ulList li.on img {
+    width: 150px;
+    height: 94px;
+    padding: 4px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+  }
+  .bd .ulList li .pubtext {
+    color: #777;
+    display: none;
+  }
+  .bd .ulList li .pubtext strong {
+    color: #E72410;
+  }
+  .bd .ulList li .pubtext a {
+    color: #E72410;
+  }
+  .bd .ulList li .pubpic {
+    display: none;
+  }
+  .bd .ulList li .pubtitle p {
+    display: none;
+  }
+  .bd .ulList li.on {
+    height: 180px;
+    text-align: center;
+    line-height: 22px !important;
+  }
+  .bd .ulList li.on .pubpic {
+    display: block;
+    padding-top: 5px;
+  }
+  .bd .ulList li.on .pubtext {
+    color: #777;
+    display: block;
+  }
+  .bd .ulList li.on .pubtitle p {
+    display: block;
+  }
+
+  .tabRank .bd .ulList2 .pic {
+    float: left;
+  }
+  .tabRank .bd .ulList2 .con {
+    float: right;
+    width: 160px;
+  }
+  .tabRank .bd .ulList2 li {
+    clear: both;
+    padding-top: 8px;
+    height: 58px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .tabRank .bd .ulList2 img {
+    width: 57px;
+    height: 47px;
+    padding: 1px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    float: left;
+  }
+}
+
+//新闻
+
+//底部
+/*··························底部样式开始···························*/
+.footerWrap {
+  width: 100%;
+  .footer, .footer11 {
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+  .footNavWrap {
+    width: 1200px;
+    background-color: @mainColor;
+    margin: 0 auto;
+    padding: 20px 0;
+
+  }
+}
+
+.footNavWrap a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footNav {
+  float: left;
+  width: 840px;
+}
+
+.footCode {
+  float: right;
+  width: 360px;
+  .firstCode {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+
+.footNav > .foot-lists {
+  float: left;
+  width: 260px;
+  /*width: 94px;*/
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: #ccc solid 1px;
+  .foot-list-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    float: left;
+    width: 100%;
+    font-weight: normal;
+  }
+  .foot-list-item {
+    width: 50%;
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.footNav > dl > dd > a {
+  font-size: 16px;
+}
+
+div.footBian {
+  width: 100%;
+  background-color: @mainColor;
+}
+
+.footCode img {
+  height: 98px;
+  width: 98px;
+}
+
+.footCode h3 {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.footBtm {
+  height: 104px;
+  padding: 10px 0;
+}
+
+.lianxi {
+  float: left;
+
+}
+
+.footTil {
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 20px;
+  width: 160px;
+  height: 60px;
+}
+
+.footTil span {
+  margin-right: 14px;
+  font-size: 18px;
+  //font-weight: bold;
+  color: #b90007;
+  line-height: 20px;
+}
+
+.footTil i {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footcon > p {
+  line-height: 24px;
+}
+
+.zhanzhang {
+  position: absolute;
+  left: 260px;
+  top: 0;
+}
+
+//底部
