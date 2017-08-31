@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/******* 主页样式 ********/
+	/***轮播***/
+.slider{ width:100%;  min-width:1200px;  height:450px;  position:relative; overflow:hidden; background:#fff; text-align:center;}
+.slider .bd{ width:1200px; position:absolute; left:50%; margin-left:-600px;}
+.slider .bd li{ width:1200px;  overflow:hidden; }
+.slider .bd li img{ display:block; width:1200px; height:450px;}
+.slider .tempWrap{ overflow:visible !important }
+.slider .tempWrap ul{  margin-left:-1200px !important; /*强制位置*/}
+.hd a{color: #000;}
+.slider .hd{ position:absolute; width:100%; left:0;  z-index:1; height:8px; bottom:20px;  text-align:center;}
+.slider .hd li{ display:inline-block; *display:inline; zoom:1; width:8px; height:8px; line-height:99px; overflow:hidden; background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/slider-btn.png) 0 -10px no-repeat; margin:0 5px; cursor:pointer; filter:alpha(opacity=60);opacity:0.6;}
+.slider .hd li.on{ background-position:0 0; filter:alpha(opacity=100);opacity:1;}
+.slider .pnBtn{  position:absolute; z-index:1; top:0; width:100%;  height:450px; cursor:pointer;}
+.slider .prev{ left:-50%; margin-left:-605px;}
+.slider .next{ left:50%;  margin-left:595px;}
+.slider .pnBtn .blackBg{ display:block;  position:absolute; left:5px; top:0; width:100%; height:450px; background:#000; filter:alpha(opacity=50);opacity:0.5;}
+.slider .pnBtn .arrow{ display:none;   position:absolute; top:45px; z-index:1; width:60px; height:350px;}
+.slider .pnBtn .arrow:hover{ filter:alpha(opacity=60);opacity:0.6;}
+.slider .prev .arrow{ right:0; background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/slider-arrow.png) -120px 0 no-repeat;}
+.slider .next .arrow{ left:0; background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/slider-arrow.png) 0 0 no-repeat;}
+.slider .bd li a{display: inline-block;}
+	/****推荐轮播****/
+.scrollBox{ width:1200px;border-top:1px solid #fff; position:relative; }
+.scrollBox .piclist{ overflow:hidden; zoom:1;}
+.scrollBox .ohbox{overflow:hidden; position:relative;width:1200px;}
+.ohbox img{width:179px;height:179px;}
+.scrollBox {position:relative;overflow:hidden;zoom:1;}
+.scrollBox .piclist li{float:left; display:inline; width:179px;background:#fff;border:1px solid #c9bea9;margin-right:10px;padding:5px;}
+.scrollBox .piclist li span{height:25px;line-height:25px;display:block;text-align:center;   }
+.scrollBox .pageBtn span{ background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/bntBg.png) no-repeat; display:block;width:37px;height:59px;position:absolute;top:72px;cursor:pointer;text-indent:-999em;overflow:hidden; }
+.scrollBox .pageBtn .prev{left:20px;background-position:-11px -84px ;}
+.scrollBox .pageBtn .next{right:20px;background-position:-53px -84px ;}
+.scrollBox .pageBtn .list{overflow:hidden;zoom:1;margin:10px 0 0 47%; }
+.scrollBox .pageBtn .list li{ background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/bntBg.png); float:left; display:inline; width:15px;height:15px;background-position:-86px -57px ;cursor:pointer;margin-left:10px;line-height:10000px;overflow:hidden;  }
+.scrollBox .pageBtn .list li.on{background-position:-114px -57px }
+#scroll_num6{float: right;!important;margin-right: 0px;!important;margin-left: 4px;!important;}
+#scroll_num4{margin-left: 6px;!important;}
+.scrollBox a{text-decoration: none;color: #333;font-size: 12px;}
+.scrollBox a:hover{color: #F03;}
+/**** 优质推送 ****/
+.high{margin-top: 15px;}
+.high_No1{width:300px;}
+.focusBox { position: relative; width: 300px; height: 300px; overflow: hidden; font: 12px/1.5 Verdana, Geneva, sans-serif; text-align: left; background: white; }
+.focusBox .pic img { width: 300px; height: 300px; display: block; }
+.focusBox .txt-bg { position: absolute; bottom: 0; z-index: 1; height: 36px; width:100%;  background: #333; filter: alpha(opacity=40); opacity: 0.4; overflow: hidden; }
+.focusBox .txt { position: absolute; bottom: 0; z-index: 2; height: 36px; width:100%; overflow: hidden; }
+.focusBox .txt li{ height:36px; line-height:36px; position:absolute; bottom:-36px;}
+.focusBox .txt li a{ display: block; color: white; padding: 0 0 0 10px; font-size: 12px; font-weight: bold; text-decoration: none; }
+.focusBox .num { position: absolute; z-index: 3; bottom: 8px; right: 8px; }
+.focusBox .num li{ float: left; position: relative; width: 18px; height: 15px; line-height: 15px; overflow: hidden; text-align: center; margin-right: 1px; cursor: pointer; }
+.focusBox .num li a,.focusBox .num li span { position: absolute; z-index: 2; display: block; color: white; width: 100%; height: 100%; top: 0; left: 0; text-decoration: none; }
+.focusBox .num li span { z-index: 1; background: black; filter: alpha(opacity=50); opacity: 0.5; }
+.focusBox .num li.on a,.focusBox .num a:hover{ background:#f60;  }
+.high_No1_brg{margin-top: 8px;}
+.high_No2{width:560px;margin-right: 20px;margin-left: 10px;}
+.high_No2_by{color: #7f7f7f;font-size: 16px;margin-bottom: 15px;margin-top: 3px;}
+.high_No2_bity{color:#000;clear: both;font-size: 18px;}
+.high_No2_lit2{margin-bottom: 15px;}
+.high_No2_list{height: 110px;width: 110px;margin-right: 10px;}
+.high_No2_li li{overflow:hidden;float: left;list-style-type:none;width:205px;margin-right: 10px;}
+.high_No2_li a{height:28px;color: #333333;text-decoration: none;font-size: 14px;}
+.high_No2_byi a{overflow:hidden;font-size: 20px;color: #c6171e;text-decoration: none;margin-bottom: 10px;margin-top: 8px;}
+.high_No2_byno{width:440px;}
+/**** No3 右侧切换 ****/
+.tabRank{ width:300px; margin:10px auto;   border:1px solid #d8d8d8;  }
+.tabRank .hd{ background-color:#e2e2e2; height:29px; line-height:28px; border-bottom:none;}
+.tabRank .hd h3 { float:left; width:75px; overflow:hidden; text-align:center;}
+.tabRank .hd h3 a { color:#333; font-size:14px; font-weight:bold;}
+.tabRank .hd h3.on { background-color:#f9f9f9; height:29px;}
+.tabRank .hd h3.on a { display:block; color:#e72410;}
+.tabRank .bd {  height:424px; background-color:#f9f9f9; clear:both;}
+.tabRank .bd ul { padding:10px 8px;}
+.tabRank .bd .ulList  li { border-bottom:1px solid #e5e5e5; height:46px; line-height:42px; }
+.tabRank .bd .ulList li a { color:#333;}
+.tabRank .bd .ulList li .num { font-size:14px; font-weight:bold; color:#333; background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/icons.png) no-repeat -50px 0; width:24px; height:20px; display:block; float:left; line-height:17px; text-align:center; margin-top:13px; padding-right:6px;}
+.tabRank .bd .ulList li.t .num { background-position:0 0; color:#fff;}
+.tabRank .bd .ulList li.t {line-height:42px !important;}
+.tabRank .bd .ulList li.on img {width:150px; height:94px; padding:4px; border:1px solid #d0d0d0; background-color:#fff;}
+.tabRank .bd .ulList li .pubtext {color:#777;display:none; }
+.tabRank .bd .ulList li .pubtext strong {color:#E72410;}
+.tabRank .bd .ulList li .pubtext a {color:#E72410;}
+.tabRank .bd .ulList li .pubpic{display:none;}
+.tabRank .bd .ulList li .pubtitle p{display:none;}
+.tabRank .bd .ulList li.on{height:180px;text-align:center;line-height:25px !important;}
+.tabRank .bd .ulList li.on .pubpic{display:block;padding-top:15px;}
+.tabRank .bd .ulList li.on .pubtext {color:#777;display:block; }
+.tabRank .bd .ulList li.on .pubtitle p{display:block;}
+.tabRank .bd .ulList2 .pic { float:left;}
+.tabRank .bd .ulList2 .con {float:right; width:160px;} 
+.tabRank .bd .ulList2 li { clear:both; padding-top:8px;height:58px;border-bottom:1px solid #E5E5E5;}
+.tabRank .bd .ulList2 img {width:57px; height:47px; padding:1px; border:1px solid #d0d0d0; background-color:#fff; float:left;}
+.high_No3{width:300px;}
+/*******广告*******/
+.bg_1200{width:1200px;height:90px;}
+.bg_900{width:900px;height:90px;}
+/******* 栏目 *******/
+.column{height:100px;text-align: center;padding-top: 10px;padding-bottom: 10px;border-top-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-bottom-style: solid;border-top-color: #CCC;border-bottom-color: #CCC;margin-top: 10px;}
+.column_No1{font-size: 36px;font-weight: bold;color: #000;padding-bottom: 18px;}
+.column_No1 a{font-size: 36px;font-weight: bold;color: #000;}
+.column_No1 a:hover{color: #F03;}
+.column_No2{text-align: center;}
+.column_No2 a{color: #000;	}
+.column_No3{width:40px;display: inline-block;padding-right: 15px;padding-left: 15px;border-right-width: 2px;border-right-style: solid;border-right-color: #000;}
+.study_h{height:400px;margin-top: 10px;margin-bottom: 10px;}
+.column_No3 a{font-size: 14px;color: #000;}
+.column_No4{padding-right: 15px;padding-left: 15px;}
+.column_No4 a:hover{color: #F03;}
+.column_No3 a:hover{color: #F03;}
+.column_No4 a{font-size: 14px;color: #000;}
+.bg_sanj{width:1200px;height:9px;background-image: url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/sanj.png);background-repeat: no-repeat;background-position: center;}
+/******* 图片欣赏特效 *******/
+.tpl4 .bg,.tpl4 .content{position:absolute;width:100%;height:100%;}
+.tpl4 .bg div{width:20%;float:left;height:100%;display: inline-block;*zoom:1;*display:inline;background-color:#aaa;background-color:rgba(0,0,0,.4);}
+.tpl4 .content .info-title{color:#fefefe;font-size:18px;margin:0;padding:10px;text-shadow:1px 1px 2px rgba(0,0,0,.5);background-color:#999;background-color:rgba(0,0,0,.3);}
+.tpl4 .content .detail{padding: 8px 10px;font-size:14px;line-height:1.5em;color:#fdfdfd;text-shadow:1px 1px 1px rgba(0,0,0,.3);}
+.tpl4 .content .more{text-decoration: none;position:absolute;bottom:0;right:0;font-size:13px;padding:5px 8px;color:#fff;background-color:#FFF;background:rgba(0,0,0,.5);border-radius:5px 0 0 0;}
+/******/
+.zjk-newlist{margin-top: 5px;}
+.zjk-list{margin-right: 5px;margin-left: 5px;margin-bottom: 5px;}
+/**** 学习交流 ****/
+.study{margin-top: 10px;margin-bottom: 10px;}
+.study_001{margin-bottom: 10px; height:400px;}
+.study1{width:480px;height:400px;}
+.study_no2{margin-left: 15px;margin-top: 5px;}
+.study_no2_a{margin-bottom: 5px;}
+.study_no2_a a{color: #333;font-size: 18px;text-decoration: none;}
+.study_no2_li{margin-left: 15px; width:265px}
+.study_no2_li a{color: #333;}
+.study_no2_li li{margin-top: 5px;font-size: 14px;}
+#study_no2_title{font-size: 14px;color: #CC0000;}
+#study_no2_title a{font-size: 16px;color: #CC0000;}
+.study_no2_list{width:270px;margin-top:10px;margin-right: 15px;margin-left: 12px;}
+.study_no2_list img{width:270px;margin-bottom: 10px;}
+.study_no2_liby{font-size: 18px;font-weight: bold;color: #000;margin-bottom: 10px;}
+.study_no2_liby a{color:#000;}
+.study_no2_liimg{width:270px;text-align: center;}
+.study_no2_liimg img{width:270px;height:195px;}
+.study_no2_liimg a{color: #000;}
+.study_no2_listno2{font-style: normal;line-height: 33px;color: #333;font-size: 12px;}
+.study_no2_listno2 a{color: #333;font-size: 14px;}
+.study_no2_listtime{
+	
+}
+/*******/
+.study_no3{width:300px;}
+.msn-focus { width: 300px; height: 260px; }
+.msn-focus img { width: 300px; height: 223px; display: block }
+.msn-focus .hd { font-size: 14px; height:30px;  line-height: 30px; width: 307px; margin-right: -7px }
+.msn-focus .hd li { float: left; display: inline; float: left; margin: 0 7px 0 0; height: 35px }
+.msn-focus .hd .on { background: url("https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/arrow.png") no-repeat scroll center bottom }
+.msn-focus .hd .on a { background-color: #38a3db; color: #fff }
+.msn-focus .hd a { height: 30px; background-color: #eee; float: left; padding: 0 8px }
+.msn-focus .bd { width: 300px; height: 223px; position: relative; overflow: hidden }
+.msn-focus .bd ul { height: 223px; overflow: hidden; position:relative;  font-size: 14px; line-height: 28px }
+.msn-focus .bd li { width: 300px; height: 223px; background-color: #fff; position: relative }
+.msn-focus .bd li p { position: absolute; left: 0; bottom: 0; line-height: 35px; height: 35px; width: 300px; white-space: nowrap; overflow: hidden }
+.msn-focus .bd li p i { position: absolute; left: 0; top: 0; display: block; width: 300px; height: 35px; background: #000; opacity: .5; filter: alpha(opacity=50) }
+.msn-focus .bd li p a, .msn-focus .bd li p a:visited { position: relative; color: #fff; margin-left: 20px }
+.msn-focus .bd li p a:hover { color: #f60 }
+.msn-focus .prev, .msn-focus .next { position: absolute; bottom: 85px; width: 29px; height: 64px; opacity: .6; filter: alpha(opacity=60); overflow: hidden; display: none; text-indent: -999px; border: none; background:url(https://sheyingcn.oss-cn-shanghai.aliyuncs.com/web/index/images/arrowLR.png) no-repeat; }
+.msn-focus .prev: hover, .msn-focus .next: hover { opacity: .9; filter: alpha(opacity=90) }
+.msn-focus .prev { left: 0; background-position: -50px 0 }
+.msn-focus .next { right: 0;  }
+.msn-focus .bdOn .prev,.msn-focus .bdOn .next{ display:block;  }
+.study_no2_dv{width:400px;}
+.bw-h{height: 10px;}
+/***** 学习轮播 *****/
+/**** 优质推送 ****/
+/*.high{margin-top: 15px;}
+.high_No1{width:300px;}*/
+.news_focusBox { position: relative; width: 480px; height: 402px; overflow: hidden; font: 12px/1.5 Verdana, Geneva, sans-serif; text-align: left; background: white; }
+.news_focusBox .news_pic img { width: 480px; height: 402px; display: block; }
+.news_focusBox .news_txt-bg { position: absolute; bottom: 0; z-index: 1; height: 36px; width:100%;  background: #333; filter: alpha(opacity=40); opacity: 0.4; overflow: hidden; }
+.news_focusBox .news_txt { position: absolute; bottom: 0; z-index: 2; height: 36px; width:100%; overflow: hidden; }
+.news_focusBox .news_txt li{ height:36px; line-height:36px; position:absolute; bottom:-36px;}
+.news_focusBox .news_txt li a{ display: block; color: white; padding: 0 0 0 10px; font-size: 12px; font-weight: bold; text-decoration: none; }
+.news_focusBox .news_num { position: absolute; z-index: 3; bottom: 8px; right: 8px; }
+.news_focusBox .news_num li{ float: left; position: relative; width: 18px; height: 15px; line-height: 15px; overflow: hidden; text-align: center; margin-right: 1px; cursor: pointer; }
+.news_focusBox .news_num li a,.news_focusBox .news_num li span { position: absolute; z-index: 2; display: block; color: white; width: 100%; height: 100%; top: 0; left: 0; text-decoration: none; }
+.news_focusBox .news_num li span { z-index: 1; background: black; filter: alpha(opacity=50); opacity: 0.5; }
+.news_focusBox .news_num li.news_on a,.news_focusBox .news_num a:hover{ background:#f60;  }
+.news_high_No1_brg{margin-top: 8px;}
+.news_high_No2{width:560px;margin-right: 20px;margin-left: 10px;}
+.news_high_No2_by{color: #7f7f7f;font-size: 16px;margin-bottom: 15px;margin-top: 3px;}
+.news_high_No2_bity{color:#000;clear: both;font-size: 18px;}
+.news_high_No2_lit2{margin-bottom: 15px;}
+.news_high_No2_list{height: 110px;width: 110px;margin-right: 10px;}
+.news_high_No2_li li{overflow:hidden;float: left;list-style-type:none;width:205px;margin-right: 10px;}
+.news_high_No2_li a{height:28px;color: #333333;text-decoration: none;font-size: 14px;}
+.news_high_No2_byi a{overflow:hidden;font-size: 20px;color: #c6171e;text-decoration: none;margin-bottom: 10px;margin-top: 8px;}
+.news_high_No2_byno{width:440px;}
+/**********/
+.re_dv{margin-bottom: 12px;}
+.re_rce{
+	width:225px;
+	color: #333;
+	font-size: 14px;
+	
+}
+.re_title{
+height:43px;}
+.re_title a{
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+}
+.re_xi{
+	margin-right: 8px;
+}
+.re_xi a{color: #333;}
+
+.zhan {
+height: 900px;
+}
+.zhanwei{
+height:100px;}
