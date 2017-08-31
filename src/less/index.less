@@ -16,14 +16,14 @@
     position: relative;
     margin: 0 auto;
     #pic {
-      width: 1200px;
+      width: 900px;
       height: 36px;
       overflow: hidden;
       ul {
         height: 36px;
         float: left;
         li {
-          width: 1200px;
+          width: 900px;
           height: 36px;
           float: left;
           line-height: 36px;
@@ -38,7 +38,16 @@
       }
 
     }
+    .telphone{
+      h1{
+        line-height:36px;
+        font-weight: bold;
+        text-align: right;
+        color: #fff;
+        width:300px;
+      }
 
+    }
   }
 
 }
@@ -278,21 +287,47 @@
 //产品轮播
 /* 本例子css */
 .product-slide {
-  height: 250px;
+  height: 225px;
   margin-bottom: 20px;
 }
 
 .ladyScroll {
   width: 1200px;
-  height: 250px;
-  margin: 15px auto;
+  height: 225px;
   border: #ddd 1px solid;
   position: relative;
+  .scrollWrap {
+    width: 1200px;
+    margin-left: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: absolute;
+    .dlList {
+      dl {
+          float: left;
+          width: 185px;
+          text-align: center;
+          position: relative;
+          margin-right: 10px;
+        dt {
+          width: 185px;
+          height: 185px;
+          overflow: hidden;
+          img {
+            display: block;
+            width: 185px;
+            height: 185px;
+          }
+        }
+
+      }
+    }
+  }
   .prev, .next {
     width: 51px;
     height: 45px;
     position: absolute;
-    top: 98px;
+    top: 75px;
     left: 0;
     z-index: 100;
     cursor: pointer;
@@ -310,20 +345,8 @@
     background-position: 0 -135px;
   }
 
-  .scrollWrap {
-    width: 1200px;
-    margin-left: 30px;
-    padding-top: 20px;
-    overflow: hidden;
-    position: absolute;
-  }
-  dl {
-    float: left;
-    width: 210px;
-    text-align: center;
-    position: relative;
-    margin-right: 20px;
-  }
+
+
   span {
     display: block;
     width: 298px;
@@ -335,16 +358,7 @@
     filter: alpha(opacity=80);
     opacity: 0.80;
   }
-  dt {
-    margin: 0 auto;
-    width: 210px;
-    overflow: hidden;
-  }
-  img {
-    display: block;
-    width: 210px;
-    height: 210px;
-  }
+
   dd {
     width: 298px;
     height: 40px;
@@ -367,15 +381,7 @@
     background: #B52153;
   }
 
-  .dlList {
-    dl {
-      dt {
-        width: 210px;
-        height: 210px;
-      }
 
-    }
-  }
 }
 
 //产品轮播
@@ -675,3 +681,178 @@ div.footBian {
 }
 
 //底部
+
+//add
+.product-slide{
+  background-color: #fff;
+}
+.product-left{
+  .list-group-item{
+    transition: all 1s ease 0s;
+    &:hover{
+      background-color: @mainColor;
+      color: #fff;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+.cell-item-product{
+  transition: all 0.5s ease 0s;
+  &:hover{
+    box-shadow: 0 10px 30px rgba(0,143,181,0.3);
+  }
+}
+.cell-item-product .cell-info{
+  background-color: rgba(0,143,181,0.4);
+
+}
+.cell-item-product{
+  &:hover .cell-info{
+    background-color: rgba(0,143,181,0.8);
+  }
+}
+.news-list{
+  width:1220px;
+}
+.ladyScroll{
+  .next, .prev{
+    background-image: none;
+    width:40px;
+    height:60px;
+    line-height:60px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: all 0.5s ease 0s;
+    &:hover{
+      background-color: rgba(0,0,0,0.4);
+    }
+  }
+  &:hover{
+    .next, .prev{
+      opacity: 0.8;
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+}
+.footNav>.foot-lists{
+  padding-right: 0;
+}
+.foot-list-item{
+  padding-left:20px;
+  position: relative;
+  &:before{
+    content: '•';
+    position: absolute;
+    color: #fff;
+    //text-align: center;
+    width:20px;
+    left:0;
+    line-height:30px;
+  }
+}
+
+
+
+
+
+.tabRank{
+  width:285px;
+  transition: all 0.5s ease 0s;
+  .bd {
+    background-color: #fff;
+    padding: 20px;
+    height: 444px;
+    .ulList-title{
+      border-bottom: #EBEBEB solid 1px;
+      span{
+        font-size: 18px;
+        line-height:36px;
+        border-bottom:@mainColor solid 1px;
+        position: relative;
+        bottom: -1px;
+        display: inline-block;
+      }
+    }
+    .ulList {
+      //padding: 20px;
+      li{
+        width:100%!important;
+        //transition: all 1s ease 0s;
+        .pubtitle{
+          a{
+            font-size: 14px;
+            line-height:28px;
+            display: inline-block;
+            width:100%;
+          }
+          p{
+            font-size: 12px;
+            line-height:20px;
+          }
+        }
+      }
+      li.on {
+        height: 194px;
+        a{
+          display: inline-block;
+          position: relative;
+          img{
+            width: 170px;
+            height:120px;
+          }
+        }
+        .pubtitle{
+          a{
+            color: @mainColor;
+            .pubtitle-time{
+              display: none;
+            }
+          }
+          p{
+            color: @mainColor;
+          }
+        }
+
+      }
+    }
+  }
+  &:hover{
+    box-shadow: 0 15px 30px rgba(0,143,181,0.2);
+    border-color: @mainColor;
+  }
+}
+.news-top{
+  padding-top: 15px;
+  .news-top-item{
+    margin-bottom: 15px;
+    .news-item-titlepic{
+      width:80px;
+      height:60px;
+      margin-right: 10px;
+      img{
+        width:80px;
+        height: 60px;
+      }
+    }
+    .news-item-info{
+      width:150px;
+      .news-item-title{
+        font-size: 16px;
+        line-height:36px;
+        overflow: hidden;
+      }
+      p{
+        font-size: 12px;
+        color: #666;
+        line-height:24px;
+        span{
+          width:50%;
+          float: left;
+        }
+      }
+    }
+  }
+}
