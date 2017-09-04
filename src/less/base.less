@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"], {
+  -webkit-appearance: none;
+  resize: none;
+}
+
+/* 取消链接高亮  */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+/* 图片自适应 */
+img {
+  /*max-width:100%;*/
+  -ms-interpolation-mode: bicubic; /*为了照顾ie图片缩放失真*/
+}
+
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font: 14px 'Microsoft YaHei', PingHei, '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background: #fff ;
+}
+
+em, i {
+  font-style: normal;
+}
+
+strong {
+  font-weight: normal;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', PingHei, '宋体', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+  color: #008FB5;
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Microsoft YaHei', PingHei, '宋体', Tahoma, Arial, sans-serif;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+body{
+  background-color: #EBEBEB;
+}
+
+@import "visible";
+
+.z-contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//顶部信息轮播
+
+.head-tips {
+  width: 100%;
+  background-color: #1DB0B8;
+  .focus {
+    width: 1200px;
+    height: 36px;
+    position: relative;
+    margin: 0 auto;
+    #pic {
+      width: 900px;
+      height: 36px;
+      overflow: hidden;
+      ul {
+        height: 36px;
+        float: left;
+        li {
+          width: 900px;
+          height: 36px;
+          float: left;
+          line-height: 36px;
+          a {
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+
+    }
+    .telphone{
+      h1{
+        line-height:36px;
+        font-weight: bold;
+        text-align: right;
+        color: #fff;
+        width:300px;
+      }
+
+    }
+  }
+
+}
+
+//顶部信息轮播end
+
+//头部nav菜单
+.header {
+  width: 100%;
+  background-color: #fff;
+  .head-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: #ccc solid 1px;
+    .logo {
+      width: 300px;
+    }
+    .main-nav {
+      width: 900px;
+      .nav-list {
+
+        .list-item {
+          width: 100px;
+          a {
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            color: @mainColor;
+            transition: all 0.5s ease 0s;
+          }
+          a:hover {
+            color: #fff;
+            background-color: @mainColor;
+            box-shadow: 0 5px 30px 2px rgba(0, 143, 180, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+//友链
+.friendly-link {
+  width: 1200px;
+  /*margin-top: 10px;*/
+  padding: 15px 0;
+  margin: 0 auto;
+
+}
+
+.friendly-link-head h2 {
+  font-size: 16px;
+  line-height: 34px;
+  color: @mainColor;
+  border-top: 2px solid @mainColor;
+  text-indent: 15px;
+}
+
+.friendly-link-content {
+  padding: 0 15px;
+}
+
+.friendly-link-content a {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #333;
+  line-height: 22px;
+}
+
+.friendly-link-content a:hover {
+  color: @mainColor;
+}
+
+//友链
+//底部
+/*··························底部样式开始···························*/
+.footerWrap {
+  width: 100%;
+  .footer, .footer11 {
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+  .footNavWrap {
+    width: 1200px;
+    background-color: @mainColor;
+    margin: 0 auto;
+    padding: 20px 0;
+
+  }
+}
+
+.footNavWrap a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footNav {
+  float: left;
+  width: 840px;
+}
+
+.footCode {
+  float: right;
+  width: 360px;
+  .firstCode {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+
+.footNav > .foot-lists {
+  float: left;
+  width: 260px;
+  /*width: 94px;*/
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: #ccc solid 1px;
+  .foot-list-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    float: left;
+    width: 100%;
+    font-weight: normal;
+  }
+  .foot-list-item {
+    width: 50%;
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.footNav > dl > dd > a {
+  font-size: 16px;
+}
+
+div.footBian {
+  width: 100%;
+  background-color: @mainColor;
+}
+
+.footCode img {
+  height: 98px;
+  width: 98px;
+}
+
+.footCode h3 {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.footBtm {
+  height: 104px;
+  padding: 10px 0;
+}
+
+.lianxi {
+  float: left;
+
+}
+
+.footTil {
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 20px;
+  width: 160px;
+  height: 60px;
+}
+
+.footTil span {
+  margin-right: 14px;
+  font-size: 18px;
+  //font-weight: bold;
+  color: #b90007;
+  line-height: 20px;
+}
+
+.footTil i {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footcon > p {
+  line-height: 24px;
+}
+
+.zhanzhang {
+  position: absolute;
+  left: 260px;
+  top: 0;
+}
+.footNav>.foot-lists{
+  padding-right: 0;
+}
+.foot-list-item{
+  padding-left:20px;
+  position: relative;
+  &:before{
+    content: '•';
+    position: absolute;
+    color: #fff;
+    //text-align: center;
+    width:20px;
+    left:0;
+    line-height:30px;
+  }
+}
+//底部
