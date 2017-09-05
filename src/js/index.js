@@ -13,7 +13,9 @@ $(function () {
         interTime:30,
         delayTime:8000
     });
-    //2.中间轮播图
-    // $(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
-
-})
+    //2.给第一个元素增加class的on
+    var uList = $('.ulList');
+    for(var i = 0; i<uList.length;i++){
+	    uList.eq(i).children('.t').eq(0).addClass('on');
+    }
+});

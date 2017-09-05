@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.sheyingnet.com/news/ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>[!--pagetitle--]</title>
+	<meta name="keywords" content="[!--pagekey--]" />
+	<meta name="description" content="[!--pagedes--]" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="/d/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/d/css/base.min.css">
+	<link href="/d/css/news-list.min.css" rel="stylesheet">
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/d/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/d/js/newsList.min.js"></script>
+	<script src="/d/js/jquery.SuperSlide.2.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			//1.顶部信息轮播
+			$(".focus").slide({
+				titCell:"#tip li",
+				mainCell:"#pic ul",
+				effect:"leftMarquee",
+				autoPlay:true,
+				interTime:30,
+				delayTime:8000
+			});
+		})
+	</script>
+	<style type="text/css">
+		.news_list{
+			margin-left: 0;
+			width: 855px;
+			padding-top: 70px;
+			position: relative;
+		}
+		.news_list .itemsinfo p{
+			width: 644px
+		}
+		.news_list .itemsinfo h2{
+			width: 644px;
+		}
+		.news-menu-nav{
+			background-color: #fff;
+			height: 60px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.news-menu-nav-warp .news-menu-nav-item{
+			width: 106px;height: 40px;
+			line-height: 40px;
+			font-size: 16px;
+			padding-top: 10px;
+			color:#333;
+			text-align: center;
+		}
+		.news-menu-nav-item a{
+			display: inline-block;
+			padding: 0 10px;
+			font-weight: normal;
+		}
+		.news-menu-nav-warp .news-menu-nav-item:hover a{
+			border-bottom: #008FB5 solid 1px;
+		}
+	</style>
+</head>
+<body style="">
+[!--temp.header--]
+<div id="wrap " class="newsBody clearfix">
+	<!--中间列表-->
+	<article class="news_list" style="visibility: inherit">
+		<div class="news-menu-nav pull-left">
+			<dl class="news-menu-nav-warp">
+				[e:loop={"select classname,classpath from phome_enewsclass where bclassid=2 and showclass=0 order by myorder asc limit 8",10,24,0}]
+				<dt class="news-menu-nav-item pull-left"><a href="[!--news.url--]<?=$bqr[classpath]?>"><?=$bqr[classname]?></a></dt>
+				[/e:loop]
+			</dl>
+		</div>
+		[!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]
+		<div class="pageBox pTB20 fy ">[!--show.listpage--]</div>
+	</article>
+	<!--右侧排行榜-->
+	<div class="right_list"  id="rightList" style="display: block">
+		<div id="scroll-fixed" data-scroll="true" style="position: relative; height: 871px; top: 0px;">
+			<aside class="r_new_list">
+				<h2><a href="http://www.sheyingnet.com/news/#">热门排行</a></h2>
+				[ecmsinfo]2,6,32,0,0,9,0[/ecmsinfo]
+			</aside>
+			<div class="right_img">
+				<a href="http://www.sheyingnet.com/zjk/app" target="_blank"><img src="https://greattone.oss-cn-shanghai.aliyuncs.com/image/1500445593.png"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="boxPage" class="box-page" style="background: #fff;position: relative;z-index: 1;border-top:1px solid #eee">
+	<div class="main">
+
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>

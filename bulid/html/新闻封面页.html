@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.sheyingnet.com/news/ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>[!--pagetitle--]</title>
+	<meta name="keywords" content="[!--pagekey--]" />
+	<meta name="description" content="[!--pagedes--]" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="[!--news.url--]d/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="[!--news.url--]d/css/base.min.css">
+	<link href="[!--news.url--]d/css/news-list.min.css" rel="stylesheet">
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="[!--news.url--]d/bootstrap/js/bootstrap.min.js"></script>
+	<script src="[!--news.url--]d/js/newsList.min.js"></script>
+	<script src="[!--news.url--]d/js/jquery.SuperSlide.2.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//1.顶部信息轮播
+			$(".focus").slide({
+				titCell:"#tip li",
+				mainCell:"#pic ul",
+				effect:"leftMarquee",
+				autoPlay:true,
+				interTime:30,
+				delayTime:8000
+			});
+		})
+	</script>
+	<style type="text/css">
+		.itemsinfo .msn-focus { width: 600px; height: 320px; }
+		.itemsinfo .msn-focus img { width: 600px; height: 320px; display: block }
+		.itemsinfo .msn-focus .hd { font-size: 14px; height:30px;  line-height: 30px; width: 307px; margin-right: -7px }
+		.itemsinfo .msn-focus .hd li { float: left; display: inline; float: left; margin: 0 7px 0 0; height: 35px }
+		.itemsinfo .msn-focus .hd .on { background: url("images/arrow.png") no-repeat scroll center bottom }
+		.itemsinfo .msn-focus .hd .on a { background-color: #38a3db; color: #fff }
+		.itemsinfo .msn-focus .hd a { height: 30px; background-color: #eee; float: left; padding: 0 8px }
+		.itemsinfo .msn-focus .bd { width: 600px; height: 320px; position: relative; overflow: hidden }
+		.itemsinfo .msn-focus .bd ul { height: 320px; overflow: hidden; position:relative;  font-size: 14px; line-height: 28px }
+		.itemsinfo .msn-focus .bd li { width: 600px; height: 320px; background-color: #fff; position: relative }
+		.itemsinfo .msn-focus .bd li p { position: absolute; left: 0; bottom: 0; line-height: 35px; height: 35px; width: 600px; white-space: nowrap; overflow: hidden;margin-left: 0 }
+		.itemsinfo .msn-focus .bd li p i { position: absolute; left: 0; top: 0; display: block; width: 600px; height: 35px; background: #000; opacity: .5; filter: alpha(opacity=50) }
+		.itemsinfo .msn-focus .bd li p a, .msn-focus .bd li p a:visited { position: relative; color: #fff; margin-left: 20px }
+		.itemsinfo .msn-focus .bd li p a:hover { color: #f60 }
+		.itemsinfo .msn-focus .prev, .msn-focus .next { position: absolute; bottom: 85px; width: 29px; height: 64px; opacity: .6; filter: alpha(opacity=60); overflow: hidden; display: none; text-indent: -999px; border: none; background:url(images/arrowLR.png) no-repeat; }
+		.itemsinfo .msn-focus .prev: hover, .msn-focus .next: hover { opacity: .9; filter: alpha(opacity=90) }
+		.itemsinfo .msn-focus .prev { left: 0; background-position: -50px 0 }
+		.itemsinfo .msn-focus .next { right: 0;  }
+		.itemsinfo .msn-focus .bdOn .prev,.msn-focus .bdOn .next{ display:block;  }
+		/*栏目*/
+		.news_list{
+			padding-top: 70px;
+			position: relative;
+		}
+		.news-menu-nav{
+			background-color: #fff;
+			height: 60px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.news-menu-nav-warp .news-menu-nav-item{
+			width: 79px;height: 40px;
+			line-height: 40px;
+			font-size: 16px;
+			padding-top: 10px;
+			color:#333;
+			text-align: center;
+		}
+		.news-menu-nav-item a{
+			display: inline-block;
+			padding: 0 10px;
+			font-weight: normal;
+		}
+		.news-menu-nav-warp .news-menu-nav-item:hover a{
+			border-bottom: #008FB5 solid 1px;
+		}
+
+		/*图册*/
+		.life li, .life li .img a{
+			width: 400px;height: 210px;
+		}
+		.life li, .life li .img, .life li .mark, .life li:hover .mark .topic{
+			width: 400px;height: 210px;
+		}
+		.life li:hover .mark{
+			margin-top: -210px;
+		}
+		.news_list .itemsinfo{
+			margin-top: 0
+		}
+		.top_title{
+			text-align: center;
+			height: 50px;
+			visibility: inherit;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body style="">
+[!--temp.header--]
+<div id="wrap " class="newsBody clearfix">
+	<!--左侧时间线-->
+	<div class="left_list" id="leftList"  style="display: block">
+		<div class="box-fix-l ">
+			<div class="list-time hot-online" data-scroll="true" id="nav-fix" style="position: relative;top: 0px;">
+				<div class="top_title">
+					<img src="/d/images/2016fisrtline.png">
+				</div>
+				<div  class="nano has-scrollbar">
+					<div class="nano-content" tabindex="0" style="right: -15px;">
+						<ul id="ulFirst">
+							[ecmsinfo]2,10,32,0,0,7,0[/ecmsinfo]
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--中间列表-->
+	<article class="news_list" style="visibility: inherit">
+		<div class="news-menu-nav pull-left">
+			<dl class="news-menu-nav-warp">
+				[e:loop={"select classname,classpath from phome_enewsclass where bclassid=2 and showclass=0 order by myorder asc limit 8",10,24,0}]
+				<dt class="news-menu-nav-item pull-left"><a href="[!--news.url--]<?=$bqr[classpath]?>"><?=$bqr[classname]?></a></dt>
+				[/e:loop]
+			</dl>
+		</div>
+		<div class="itemsinfo firsttitle">
+			<div class="msn-focus" style="margin:0 auto">
+				<div class="hd" style="display: none;">
+					<ul>
+						[e:loop={2,10,0,0,'firsttitle=1','newstime DESC'}]
+						<li><a target="_blank" href="<?=$bqsr['titleurl']?>">资讯</a></li>
+						[/e:loop]
+					</ul>
+				</div>
+				<div class="bd">
+					<ol>
+						[e:loop={2,10,0,0,'firsttitle=1','newstime DESC'}]
+						<li><a href="<?=$bqsr['titleurl']?>" target="_blank"><img src="<?=$bqr['titlepic']?>" alt="<?=$bqr['title']?>"/></a>
+							<p> <i> </i> <a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a> </p>
+						</li>
+						[/e:loop]
+					</ol>
+					<!-- <a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a> -->
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				//鼠标移到大图，显示左右箭头
+				jQuery(".msn-focus .bd").hover(function(){ jQuery(this).addClass("bdOn") },function(){ jQuery(this).removeClass("bdOn") });
+				//SuperSlide书签切换
+				jQuery(".msn-focus").slide({ mainCell:".bd ol",delayTime:0,triggerTime:0,autoPlay:true });
+			</script>
+		</div>
+		[ecmsinfo]2,100,32,0,0,8,0[/ecmsinfo]
+	</article>
+	<!--右侧排行榜-->
+	<div class="right_list"  id="rightList" style="display: block">
+		<div id="scroll-fixed" data-scroll="true" style="position: relative; height: 871px; top: 0px;">
+			<aside class="r_new_list">
+				<h2><a href="http://www.sheyingnet.com/news/#">热门排行</a></h2>
+				[ecmsinfo]2,6,32,0,0,9,0[/ecmsinfo]
+			</aside>
+			<div class="right_img">
+				<a href="http://www.sheyingnet.com/zjk/app" target="_blank"><img src="https://greattone.oss-cn-shanghai.aliyuncs.com/image/1500445593.png"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="boxPage" class="box-page" style="background: #fff;position: relative;z-index: 1;border-top:1px solid #eee">
+	<div class="main">
+		<div class="photolife main box-life" style="height: 450px;">
+			<ul class="life">
+				[ecmsinfo]3,6,200,0,0,12,0,'firsttitle=1','onclick DESC'[/ecmsinfo]
+			</ul>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>
