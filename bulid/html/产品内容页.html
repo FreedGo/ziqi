@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>[!--title--] - [!--class.name--]- 紫气压缩机</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="/d/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/d/css/base.min.css">
+	<link href="/d/css/news-article.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="[!--news.url--]d/css/productArticle.min.css">
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/d/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="/d/js/newsList.min.js"></script> -->
+	<script src="/d/js/jquery.SuperSlide.2.1.js"></script>
+	<script src="[!--news.url--]d/js/productArticle.min.js"></script>
+</head>
+<body style="">
+[!--temp.header--]
+<div id="wrap " class="newsBody clearfix">
+	<!--z新闻内容-->
+	<article id="article">
+		<div class="article-nav clearfix">
+			[!--newsnav--] > [!--title--]
+		</div>
+		<header id="title"><h1>[!--title--]</h1>
+			<aside><time datetime="[newstime]" pubdate="">[!--newstime--]&nbsp; 浏览数:[!--onclick--]</time><em>发布人：[!--username--]</em></aside></header>
+		<!--产品图片轮播 start-->
+		<div class="productSlide pull-left">
+			<div class="banner" style="display: block">
+				<div class="fullSlide">
+					<div class="bd">
+						<ul>
+							[e:loop={"select * from {$dbtbpre}enewsad where classid='2' order by adid desc limit 10",10,24,0}]
+							<li style="background:url(<?=$bqr[picurl]?>_1200) #194982 center 0 no-repeat;"><a target="_blank" href="<?=$bqr[uel]?>"></a></li>
+							[/e:loop]
+						</ul>
+					</div>
+					<div class="prev">
+						<a class="arrow" href="javascript:void(0)"></a>
+					</div>
+					<div class="next">
+						<a class="arrow" href="javascript:void(0)"></a>
+					</div>
+				</div>
+
+				<script type="text/javascript">
+					$(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
+					$(".fullSlide").hover(function(){ jQuery(this).find(".arrow").stop(true,true).fadeIn(300) },function(){ jQuery(this).find(".arrow").fadeOut(300) });
+				</script>
+			</div >
+		</div>
+		<!--产品图片轮播 end-->
+		<div class="content">
+			[!--newstext--]
+		</div>
+		<!---分页--->
+
+		<div class="copyright">请支持独立网站，转发请注明本文链接！<br>本文为紫气压缩机作者发布与观点，不代表紫气压缩机立场。，如果侵权请<a href=""> 举报。</a></div>
+
+		<div class="news_list">
+			[ecmsinfo]$GLOBALS[navclassid],10,32,0,0,10,0[/ecmsinfo]
+			<a href="" class="more_list">点击加载更多 [!--class.name--]</a>
+		</div>
+	</article>
+	<!--新闻内容-->
+	<!--右侧排行榜-->
+	<div class="right_list"  id="rightList" style="display: block">
+		<div id="scroll-fixed" data-scroll="true" style="position: relative; height: 871px; top: 0px;">
+			<aside class="r_new_list">
+				<h2><a href="">热门排行</a></h2>
+				[ecmsinfo]$GLOBALS[navclassid],6,32,0,1,11,0[/ecmsinfo]
+			</aside>
+			<div class="right_img">
+				<a href="" target="_blank"><img src="https://greattone.oss-cn-shanghai.aliyuncs.com/image/1500445593.png"></a>
+			</div>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>
