@@ -20,7 +20,7 @@
 	<script src="[!--news.url--]d/js/index.min.js"></script>
 	<script>
 		$(function(){
-//			左产品列表滚动条优化
+//			左产品列表滚动条优化,修改是否正常
 			$('.left-lists').niceScroll({
 				cursorcolor: "rgba(0,143,181,.4)",//#CC0071 光标颜色
 				cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
@@ -37,17 +37,11 @@
 [!--temp.header--]
 <div class="z-contain">
 	<!--品牌介绍-->
-	<div class="mian-list clearfix">
-		<!-- 导航 -->
-		<div class="article-nav-warp clearfix">
-			<div class="article-nav pull-left">
-				[!--newsnav--]
+	<div class="mian-list clearfix" style="display: none">
 
-			</div>
-		</div>
 
 		<!-- 产品列表 -->
-		<div class="main-info clearfix" style="display: block">
+		<div class="main-info clearfix" style="display: none">
 			<a href="">
 				<div class="info-titlepic pull-left">
 					<img src="[!--news.url--]d/images/info-titlepic.png" alt="紫气压缩机（上海）有限公司">
@@ -70,7 +64,7 @@
 			<div class="product-left-list">
 				<h3 class="left-list-title"><span>产品列表</span></h3>
 				<ul class="list-group left-lists">
-					[e:loop={"select * from {$dbtbpre}enewsinfotype where mid='3' order by typeid desc limit 10",10,24,0}]
+					[e:loop={"select * from {$dbtbpre}enewsinfotype where mid='3' order by myorder asc",10,24,0}]
 					<li class="list-group-item"><a href="[!--news.url--]<?=$bqr[tpath]?>"><?=$bqr[tname]?></a></li>
 					[/e:loop]
 				</ul>
@@ -80,7 +74,13 @@
 			</div>
 		</div>
 		<!--右侧-->
-		<div class="product-right pull-left">
+		<div class="product-right pull-left" style="padding-top: 20px;">
+			<!-- 导航 -->
+			<div class="article-nav-warp daohang clearfix">
+				<div class="article-nav pull-left">
+					[!--newsnav--]
+				</div>
+			</div>
 			<div class="product-right-list">
 				<ul class="right-lists clearfix">
 					[!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]

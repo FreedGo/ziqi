@@ -23,16 +23,21 @@
 			[!--newsnav--] > [!--title--]
 		</div>
 		<header id="title"><h1>[!--title--]</h1>
-			<aside><time datetime="[newstime]" pubdate="">[!--newstime--]&nbsp; 浏览数:[!--onclick--]</time><em>发布人：[!--username--]</em></aside></header>
+			<!--<aside><time datetime="[newstime]" pubdate="">浏览数:[!--onclick--]</time><em></em></aside>--></header>
 		<!--产品图片轮播 start-->
 		<div class="productSlide pull-left">
 			<div class="banner" style="display: block">
 				<div class="fullSlide">
 					<div class="bd">
 						<ul>
-							[e:loop={"select * from {$dbtbpre}enewsad where classid='2' order by adid desc limit 10",10,24,0}]
-							<li style="background:url(<?=$bqr[picurl]?>_1200) #194982 center 0 no-repeat;"><a target="_blank" href="<?=$bqr[uel]?>"></a></li>
-							[/e:loop]
+							<?php
+						    $poto=substr($navinfor['photos'], 0, -6);
+						    $flid1=explode("::::::",$poto);
+						    $length = count($flid1);
+						    for($i=0;$i<$length;$i++){
+								echo "<li style='background:url(".$flid1[$i]."_850) #194982 center no-repeat;background-size:100%'></li>";
+							}
+							?>
 						</ul>
 					</div>
 					<div class="prev">
@@ -50,15 +55,20 @@
 			</div >
 		</div>
 		<!--产品图片轮播 end-->
-		<div class="content">
+		<div class="product-content pull-left">
 			[!--newstext--]
 		</div>
-		<!---分页--->
-
-		<div class="copyright">请支持独立网站，转发请注明本文链接！<br>本文为紫气压缩机作者发布与观点，不代表紫气压缩机立场。，如果侵权请<a href=""> 举报。</a></div>
 
 		<div class="news_list">
-			[ecmsinfo]$GLOBALS[navclassid],10,32,0,0,10,0[/ecmsinfo]
+			[e:loop={3,5,0,0,'','newstime DESC'}]
+			<div class="itemsinfo">
+				<a href="<?=$bqsr['titleurl']?>">
+					<img src="<?=titurlpic($bqr[photos])?>" alt="<?=$bqr[title]?>">
+					<h2><?=$bqr[title]?></h2>
+					<p><?=$bqr[smalltext]?></p>
+				</a>
+			</div>
+			[/e:loop]
 			<a href="" class="more_list">点击加载更多 [!--class.name--]</a>
 		</div>
 	</article>
@@ -68,7 +78,12 @@
 		<div id="scroll-fixed" data-scroll="true" style="position: relative; height: 871px; top: 0px;">
 			<aside class="r_new_list">
 				<h2><a href="">热门排行</a></h2>
-				[ecmsinfo]$GLOBALS[navclassid],6,32,0,1,11,0[/ecmsinfo]
+				[e:loop={3,5,0,0,'','onclick DESC'}]
+				<a href="<?=$bqsr['titleurl']?>">
+					<img src="<?=titurlpic($bqr[photos])?>" alt="<?=$bqr[title]?>">
+					<h3><?=$bqr[title]?></h3>
+				</a>
+				[/e:loop]
 			</aside>
 			<div class="right_img">
 				<a href="" target="_blank"><img src="https://greattone.oss-cn-shanghai.aliyuncs.com/image/1500445593.png"></a>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>[!--pagetitle--] - [!--pagekeywords--]- [!--pagedescription--]</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="/d/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/d/css/base.min.css">
+	<link href="/d/css/news-article.min.css" rel="stylesheet">
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/d/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/d/js/jquery.SuperSlide.2.1.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			var t = document.querySelector(".footerWrap"),
+			    o = document.getElementById("rightList"),
+			    s = t.offsetTop,
+			    l = document.querySelector(".header").offsetHeight+
+				    document.querySelector("#artNav").offsetHeight+
+				    document.querySelector(".art-nav-bottom").offsetHeight+
+				    document.querySelector("#headTips").offsetHeight,
+			    i = o.offsetTop,
+			    n = o.offsetHeight;
+			window.onscroll = function () {
+				var t = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+				t + n > s ? (o.style.position = "absolute", o.style.bottom = "0px", o.style.top = "") : t >= l ? (o.style.position = "absolute", o.style.top = t - l + "px", o.style.bottom = "") : (o.style.position = "absolute", o.style.top = "0px")
+			}
+		};
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			//1.顶部信息轮播
+			$(".focus").slide({
+				titCell:"#tip li",
+				mainCell:"#pic ul",
+				effect:"leftMarquee",
+				autoPlay:true,
+				interTime:30,
+				delayTime:8000
+			});
+		})
+	</script>
+	<style type="text/css">
+		.article-nav{
+			line-height: 36px;
+			height: 36px;
+			margin-bottom: 10px;
+			padding-left: 20px;
+			/*border-bottom: #ccc solid 1px*/
+		}
+		.article-nav .glyphicon{
+			line-height: 36px;
+			font-size: 14px;
+		}
+		.article-nav .nav-item{
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+		.article-content{
+			padding: 20px;
+			line-height:140%;
+		}
+		.article-content h1{
+			margin-bottom: 10px;
+		}
+		.article-content p{
+			margin-bottom: 10px;
+		}
+		.art-nav-warp{
+			width:100%;
+			min-width:1200px;
+			min-height: 200px;
+			margin:0 auto;
+			background-color: #000;
+		}
+		.art-nav{
+			width:1200px;
+			margin:0 auto;
+			position: relative;
+			min-height: 200px;
+		}
+		.art-nav-pic{
+			background-color: #000;
+		}
+		.art-nav-pic img{
+			display: block;
+			margin:0 auto;
+		}
+		.art-nav-list{
+			position: absolute;
+			display: block;
+			width:1200px;
+			bottom: 0;
+		}
+		.art-list-item{
+			width:150px;
+			text-align: center;
+		}
+		.art-list-item a{
+			background-color: #00B6EE;
+			color: #fff;
+			line-height:34px;
+			padding: 0 22px;
+			display: inline-block;
+		}
+		.art-list-item a:hover{
+			opacity: 0.8;
+		}
+		.art-nav-bottom{
+			width:100%;
+			height:20px;
+		}
+	</style>
+</head>
+<body style="">
+[!--temp.header--]
+
+<div class="art-nav-warp " id="artNav">
+	<div class="art-nav">
+		<div class="art-nav-pic">
+			<img src="http://www.ziqi-group.com/ziqi/banner/about.jpg" alt="">
+		</div>
+		<ul class="art-nav-list clearfix">
+			<li class="art-list-item pull-left"><a href="">关于我们</a></li>
+			<li class="art-list-item pull-left"><a href="">企业文化</a></li>
+			<li class="art-list-item pull-left"><a href="">工作机会</a></li>
+			<li class="art-list-item pull-left"><a href="">联系方式</a></li>
+			<li class="art-list-item pull-left"><a href="">服务与培训</a></li>
+			<li class="art-list-item pull-left"><a href="">物联网</a></li>
+			<li class="art-list-item pull-left"><a href="">视频教程</a></li>
+		</ul>
+	</div>
+</div>
+<div class="art-nav-bottom"></div>
+<div id="wrap " class="newsBody clearfix">
+	<!--z新闻内容-->
+	<article id="article">
+		<div class="article-content">
+			[!--pagetext--]
+		</div>
+
+		<div class="news_list">
+			[e:loop={2,5,3,1}]
+			<div class="itemsinfo">
+				<a href="<?=$bqsr['titleurl']?>">
+					<img src="<?=$bqr['titlepic']?>" alt="<?=$bqr['title']?>">
+					<h2><?=$bqr['title']?></h2>
+					<p><?=$bqr['smalltext']?></p>
+				</a>
+			</div>
+			[/e:loop]
+		</div>
+	</article>
+	<!--新闻内容-->
+	<!--右侧排行榜-->
+	<div class="right_list"  id="rightList" style="display: block">
+		<div id="scroll-fixed" data-scroll="true" style="position: relative; height: 871px; top: 0px;">
+			<aside class="r_new_list">
+				<h2><a href="">热门排行</a></h2>
+				[e:loop={2,5,4,1}]
+				<a href="<?=$bqsr['titleurl']?>">
+					<img src="<?=$bqr['titlepic']?>" alt="<?=$bqr['title']?>">
+					<h3><?=$bqr['title']?></h3>
+				</a>
+				[/e:loop]
+			</aside>
+			<div class="right_img">
+				<a href="" target="_blank"><img src="https://greattone.oss-cn-shanghai.aliyuncs.com/image/1500445593.png"></a>
+			</div>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>
