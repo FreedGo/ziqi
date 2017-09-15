@@ -37,7 +37,6 @@
     left: 0;
     height: 30px;
     line-height: 30px;
-    background: url(../images/touming.png) repeat-x;
     text-align: center;
     _background: #000;
     _filter: alpha(opacity=60);
@@ -64,6 +63,8 @@
 
 }
 
+
+
 //轮播图
 
 //主页中间介绍
@@ -83,7 +84,7 @@
     height: 240px;
     overflow: hidden;
     padding: 10px 0;
-    color: @mainColor;
+    color: #000;
     .info-content-title {
       font-size: 18px;
       line-height: 30px;
@@ -108,10 +109,10 @@
     .product-left-list {
       padding: 20px 20px 0;
       background-color: #fff;
-      height: 460px;
-      margin-bottom: 20px;
       .left-lists .list-group-item {
-        border: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         padding-left: 0;
       }
       .left-list-title {
@@ -146,6 +147,8 @@
       .right-list-item {
         margin-right: 20px;
         margin-bottom: 20px;
+        border:#ccc solid 1px;
+
       }
     }
   }
@@ -157,10 +160,10 @@
   height: 340px;
   position: relative;
   overflow: hidden;
-  :hover .cell-info {
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+  //:hover .cell-info {
+  //  bottom: 0;
+  //  background-color: rgba(0, 0, 0, 0.6);
+  //}
   .cell-titlepic {
     img {
       width: 280px;
@@ -177,8 +180,7 @@
     .cell-title {
       font-size: 16px;
       text-align: center;
-      line-height: 36px;
-      color: #fff;
+      color: #000;
       margin-bottom: 10px;
     }
     .cell-dec {
@@ -444,28 +446,37 @@
 .product-left{
   .list-group-item{
     transition: all 1s ease 0s;
+    padding: 0px 0px 0px 5px;
+    a{
+      line-height: 39px;
+    }
     &:hover{
-      background-color: @mainColor;
+      background-color: #ddd;
       color: #fff;
       a{
-        color: #fff;
+        display: block;
+        line-height: 39px;
+        padding-left: 15px;
       }
     }
   }
 }
 .cell-item-product{
   transition: all 0.5s ease 0s;
-  &:hover{
-    box-shadow: 0 10px 30px rgba(0,143,181,0.3);
-  }
+  //&:hover{
+  //  box-shadow: 0 10px 30px rgba(0,143,181,0.3);
+  //}
 }
 .cell-item-product .cell-info{
-  background-color: rgba(0,143,181,0.4);
+  //background-color: rgba(0,143,181,0.4);
+  background-color: #fff;
 
 }
 .cell-item-product{
   &:hover .cell-info{
-    background-color: rgba(0,143,181,0.8);
+    //background-color: rgba(0,143,181,0.8);
+    background-color: #fff;
+    bottom: -58px;
   }
 }
 .news-list{
